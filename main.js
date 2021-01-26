@@ -1,6 +1,7 @@
 const canvas = document.getElementById('canvas');
 const increaseBtn = document.getElementById('increase');
 const decreaseBtn = document.getElementById('decrease');
+const sizeEl = document.querySelector('span');
 
 const ctx = canvas.getContext('2d');
 
@@ -39,6 +40,7 @@ increaseBtn.addEventListener('click',(e) => {
     }
 
     console.log(size)
+    updateSizeOnSpan()
 })
 
 decreaseBtn.addEventListener('click',(e) => {
@@ -47,7 +49,13 @@ decreaseBtn.addEventListener('click',(e) => {
     if(size < 5) {
         size = 5
     }
+
+    updateSizeOnSpan()
 })
+
+function updateSizeOnSpan() {
+    sizeEl.innerHTML = ` ${size}`
+}
 
 /* function draw() {
     //ctx.clearRect(0, 0, canvas.width, canvas.height);
