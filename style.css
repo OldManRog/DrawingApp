@@ -23,20 +23,35 @@ canvas {
     justify-content: flex-end;
     border-top-left-radius: 5px;
     border-top-RIGHT-radius: 5px;
+    font-family: inherit;
 
 }
 
-button {
+.toolbox button {
     margin: 5px;
-    outline-style: none;
     width: 30px;
     background-color: antiquewhite;
     border: none;
+    border-radius: 1px;
 }
 
-span {
+.toolbox button:focus {
+    outline-style: none;
+}
+
+.toolbox span {
     color: burlywood;
     align-items: center;
     align-self: center;
 }
 
+.toolbox input {
+    border-radius: 1px;
+    margin: 1px;
+    align-self: center;
+}
+
+.toolbox .clear {
+    width: 60px;
+    
+}
