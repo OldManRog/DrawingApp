@@ -17,7 +17,7 @@ function updateSizeOnSpan() {
 orginal:
 ```
 function updateSizeOnScreen() {
-sizeEl.innerText = size
+    sizeEl.innerText = size
 }
 
 ```
